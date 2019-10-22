@@ -3,10 +3,10 @@
  */
 package org.example;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.*;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class TestBowlingScorecard {
     @Test public void when_initialised_then_noErrors() {
@@ -24,7 +24,8 @@ public class TestBowlingScorecard {
         assertThat(score, equalTo(0));
     }
 
-    @Test public void when_all1sGame_then_scoreIs20() {
+    @Test
+    public void when_all1sGame_then_scoreIs20() {
         // given
         BowlingScorecard scorecard = new BowlingScorecard();
 
