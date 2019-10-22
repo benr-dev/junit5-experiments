@@ -31,6 +31,7 @@ dependencies {
 
 }
 
+// Enable JUnit Platform to run the tests
 test {
     useJUnitPlatform()
 }
